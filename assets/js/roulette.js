@@ -1,4 +1,6 @@
 function spinner() {
+  $("#rouletteSpin").attr("disabled");
+
   const x = -1000
   const y = -3000
 
@@ -7,8 +9,8 @@ function spinner() {
   const numero = deg - trunk * 360
 
   // setTimeout(() => {
-  //   console.log(varGame)
-  // }, 500);
+  //   $("#selectedAward").removeAttr("disabled");
+  // }, 3500);
 
   $('.contanerRoulette').css('transform', 'rotate('+deg+'deg)')
   setTimeout(() => {
