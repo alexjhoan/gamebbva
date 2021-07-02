@@ -603,7 +603,8 @@ section > div {
 #Awards .continerPrice p{
   margin: 0;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
+  color: var(--primary);
 }
 
 #Awards .imgAvatar{
