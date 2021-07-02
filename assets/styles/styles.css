@@ -18,10 +18,14 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-weight: 500;
 }
 
-a,p,div,input,button,textarea{
+div,input,button,textarea{
   font-family: BBVA;
   color: var(--text-secondary);
   font-weight: 500;
+}
+
+a, p{
+  font-weight: 400;
 }
 
 img {
@@ -63,8 +67,6 @@ section > div {
   color: var(--primary);
 }
 /*----------------------------Start-------------------------------*/
-
-@import "fonts.css";
 .box{
     padding: 0;
     margin:0;
@@ -208,7 +210,7 @@ section > div {
 /*buttons*/
 .dynamic_btn, .play_btn{
     background-color: transparent!important;
-    width: 22%;
+    width: 40%;
     font-size: 24px;
     border: none;
     cursor: pointer;
@@ -217,9 +219,14 @@ section > div {
     vertical-align: middle;
     position: absolute;
     z-index: 1;
-    bottom: 13%;
+    bottom: 10%;
     text-align: left;
     margin-left: 2%;
+}
+
+.dynamic_btn img, .play_btn img{
+  transform: translateY(-4px);
+  margin-right: 5px;
 }
 .dynamic_btn:focus{
     background-color: transparent!important;
@@ -232,8 +239,7 @@ section > div {
     outline: none
 }
 .play{
-    width: 10%;
-    bottom: 6%;
+    bottom: 2%;
 }
 /*Modal*/
 .modal-body{
@@ -281,7 +287,7 @@ section > div {
     margin-top: 15px;
   }
   #loader img{
-    width: 80px;
+    width: 50px;
     height: auto;
     -webkit-animation: spin 0.5s linear infinite;
     animation: spin 0.5s linear infinite;
