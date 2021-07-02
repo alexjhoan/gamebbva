@@ -74,7 +74,7 @@ section > div {
     margin: 0;
 }
 .contenedor{
-    background: url("../img/fondo.png");
+    background: url(../img/fondo.png);
     max-width: 800px;
     width: 100%;
     height: 600px;
@@ -83,7 +83,7 @@ section > div {
     margin: 0 auto;
 }
 .cloud1{
-    background: url(../img/Nubes/cloud1.png);
+    background: url(../img/nubes/cloud1.png);
     background-repeat: no-repeat;
     background-size:contain;
     height: 188px;
@@ -92,7 +92,7 @@ section > div {
     z-index: 1;
 }
 .cloud2{
-    background: url(../img/Nubes/cloud2.png);
+    background: url(../img/nubes/cloud2.png);
     background-repeat: no-repeat;
     background-size:contain;
     width: 151px;
@@ -103,7 +103,7 @@ section > div {
 
 }
 .cloud3{
-    background: url(../img/Nubes/cloud3.png);
+    background: url(../img/nubes/cloud3.png);
     background-repeat: no-repeat;
     width: 116px;
     height: 170px;
@@ -125,7 +125,7 @@ section > div {
     justify-content: center;
 }
 .cloud5{
-    background: url(../img/Nubes/cloud5.png);
+    background: url(../img/nubes/cloud5.png);
     background-repeat: no-repeat;
     background-size:contain;
     width: 421px;
@@ -135,7 +135,7 @@ section > div {
     z-index: 1;
 }
 .cloud6{
-    background: url(../img/Nubes/cloud6.png);
+    background: url(../img/nubes/cloud6.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 231px;
