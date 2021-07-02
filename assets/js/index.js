@@ -18,7 +18,7 @@ new WOW({offset:offset, scrollContainer: null}).init()
 let cards = []
 
 const getCards = async() => {
-  let data = await fetch('../../components/GameCards.json')
+  let data = await fetch('components/GameCards.json')
   cards = await data.json()
 }
 
