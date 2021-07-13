@@ -800,6 +800,17 @@ section > div {
   width: fit-content;
   transition: transform ease-in-out .1s;
   user-select: none;
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+}
+
+#Cards .gameCard .back .containerQuestion .modalQuestion p span{
+ margin-right: 10px;
+}
+
+#Cards .gameCard .back .containerQuestion .modalQuestion p:first-child span{
+  margin-right: 12px;
 }
 
 #Cards .gameCard .back .containerQuestion .modalQuestion p:hover{

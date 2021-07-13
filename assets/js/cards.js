@@ -3,35 +3,27 @@ function randomCardFunction(arrayCard) {
   let max = cards[randomCard.typeCard].length - 1
   let num = Math.floor(Math.random()*(max-min+1))+min;
 
-  // if (randomCard.old[arrayCard].length > max) {
-  //   alert('no hay mas cartas')
-  // } else {
-  //   if (!randomCard.old[arrayCard].includes( num )) {
-  //     randomCard = { ...randomCard,
-  //       new: num
-  //     }
-  //     randomCard.old[arrayCard].push(num)
-  //   } else {
-  //     while (randomCard.old[arrayCard].includes( num )) {
-  //       num = Math.floor(Math.random()*(max-min+1))+min;
-  //     }
-  //     randomCard = { ...randomCard,
-  //       new: num
-  //     }
-  //     randomCard.old[arrayCard].push(num)
-  //   }
-  // }
-
-
-  console.log(randomCard)
-  console.log(max)
-  console.log(num)
+  if (randomCard.old[arrayCard].length > max) {
+    alert('no hay mas cartas aleatorias')
+  } else {
+    if (!randomCard.old[arrayCard].includes( num )) {
+      randomCard.new[arrayCard] = num
+      randomCard.old[arrayCard].push(num)
+      console.log(randomCard)
+    } else {
+      console.log('si lo incluye')
+      while (randomCard.old[arrayCard].includes( num )) {
+        num = Math.floor(Math.random()*(max-min+1))+min;
+      }
+      randomCard.new[arrayCard] = num
+      randomCard.old[arrayCard].push(num)
+    }
+  }
 }
 
 function viewCard(colorCard, arrayCard) {
   randomCard.typeCard = arrayCard
   // randomCardFunction(arrayCard)
-
   if (randomCard.new[randomCard.typeCard] < cards[randomCard.typeCard].length) {
     setTimeout(() => {
       $(`.${colorCard} .innerQuestion`).text(cards[randomCard.typeCard][randomCard.new[arrayCard]].text).show()
@@ -39,7 +31,7 @@ function viewCard(colorCard, arrayCard) {
         $(`.${colorCard} .modalFeedback`).show();
       } else {
         let button = cards[randomCard.typeCard][randomCard.new[arrayCard]].options.map((btn, i) =>{
-          return(`<p onclick="response(${btn.valid})">${i + 1}. ${btn.text}</p>`)
+          return(`<p onclick="response(${btn.valid})"><span>${i + 1}.</span> ${btn.text}</p>`)
         })
         $(`.${colorCard} .modalQuestion`).append(button);
         $(`.${colorCard} .modalQuestion`).show();
@@ -54,8 +46,7 @@ function viewCard(colorCard, arrayCard) {
       $(`.${colorCard}`).addClass('showCard');
     }, 400);
   } else {
-    alert('no hay mas cartas de este color')
-
+    alert('no hay mas cartas de este color viewCard')
   }
 }
 
@@ -121,5 +112,5 @@ function hideCards(colorCard) {
     randomCard.new[randomCard.typeCard] ++
   }
 
-  console.log(randomCard)
+  // console.log(randomCard)
 }

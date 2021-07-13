@@ -67,7 +67,7 @@
       }
     },
     {
-      "text": " ¿Qué cosas puede dejar de hacer Irene para ahorrar dinero y poder ir al próximo concierto de su cantante favorito:? ",
+      "text": " ¿Qué cosas puede dejar de hacer Irene para ahorrar dinero y poder ir al próximo concierto de su cantante favorito? ",
       "options":[
         {
           "text": "Ir a la peluquería todas las semanas.",
@@ -155,7 +155,7 @@
       }
     },
     {
-      "text": "¿Cuál es el mejor momento para empezar a ahorrar?:",
+      "text": "¿Cuál es el mejor momento para empezar a ahorrar?",
       "options":[
         {
           "text": "Próximo mes.",
@@ -225,11 +225,11 @@
       "options":[
         {
           "text": "Verdadero",
-          "valid": true
+          "valid": false
         },
         {
           "text": "Falso",
-          "valid": false
+          "valid": true
         }
       ],
       "feedback": {
@@ -327,7 +327,7 @@
       }
     },
     {
-      "text": "Alejandro tenía Bs. 50.000 y gastó Bs. 350.000. Rodolfo tenía Bs. 350.000 y gastó Bs. 100.000. ¿Quién tiene más dinero ahora?",
+      "text": "Alejandro tenía Bs. 350.000 y gastó Bs. 350.000. Rodolfo tenía Bs. 350.000 y gastó Bs. 100.000. ¿Quién tiene más dinero ahora?",
       "options":[
         {
           "text": "Rodolfo.",
@@ -841,11 +841,11 @@
       "options":[
         {
           "text": "Le das las gracias por invitarte pero le dices que lo dejen para otro día ya que almorzarás con toda tu familia.",
-          "valid": false
+          "valid": true
         },
         {
           "text": "Aceptas la invitación de tu amiga sin importar que no asistas a almorzar con tu familia.",
-          "valid": true
+          "valid": false
         }
       ],
       "feedback": {
@@ -1042,11 +1042,11 @@
       "feedback": {
         "positive": {
           "text": "¡Muy bien! Todos los cuadernos cumplen la misma función y tú has logrados ahorrar dinero. Has gastado sólo Bs. ",
-          "spend": 1.2
+          "spend": 0.8
         },
         "negative": {
           "text": "Debías haber comprado lo más económico para ahorrar dinero. Has gastado Bs. ",
-          "spend": 0.8
+          "spend": 1.2
         }
       }
     },
@@ -1065,11 +1065,11 @@
       "feedback": {
         "positive": {
           "text": "¡Excelente elección! Te has comprado una chuchería pero continúas ahorrando. Has gastado sólo Bs. ",
-          "spend": 0.12
+          "spend": 0.1
         },
         "negative": {
           "text": "Debías haber comprado lo más económico para ahorrar dinero. Has gastado Bs. ",
-          "spend": 0.1
+          "spend": 0.12
         }
       }
     },
