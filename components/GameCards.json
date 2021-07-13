@@ -67,7 +67,7 @@
       }
     },
     {
-      "text": " ¿Qué cosas puede dejar de hacer Irene para ahorrar dinero y poder ir al próximo concierto de su cantante favorito: ",
+      "text": " ¿Qué cosas puede dejar de hacer Irene para ahorrar dinero y poder ir al próximo concierto de su cantante favorito:? ",
       "options":[
         {
           "text": "Ir a la peluquería todas las semanas.",
@@ -715,10 +715,10 @@
       }
     },
     {
-      "text": "Estás ahorrando de la mesada que te dan tus padres para las vacaciones. Te dicen tus amigos que salió un nuevo video juego que ya todos lo tienen. Qué debes hacer:",
+      "text": "Estás ahorrando de la mesada que te dan tus padres para las vacaciones. Te dicen tus amigos que salió un nuevo video juego que ya todos lo tienen. ¿Qué debes hacer:?",
       "options":[
         {
-          "text": "Gastarte los ahorros para tus vacaciones en ese videojuego nuevo.",
+          "text": "Gastarte los ahorros para tus vacaciones en ese video juego nuevo.",
           "valid": false
         },
         {
@@ -856,31 +856,151 @@
   ],
   [
     {
-      "text": "Para adquirir el hábito del ahorro y cumplir tus metas sólo necesitas decisión, organización y constancia."
+      "text": "Tienes una fiesta el sábado y tu vecino necesita pintar la reja de su casa ese mismo día y te pregunta si tú quieres hacerlo y él te paga por eso. ¿Qué haces?",
+      "options":[
+        {
+          "text": "Pintas la reja y así ganas un poco de dinero.",
+          "valid": true
+        },
+        {
+          "text": "Vas a la fiesta a disfrutar",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Has elegido la opción correcta. Has ganado Bs. ",
+        "negative": "¡Qué mal! Si hubieses elegido pintar la reja, te hubieses ganado Bs. ",
+        "indexMoney": 2
+      }
     },
     {
-      "text": "El ahorro es una útil herramienta para salir de cualquier imprevisto que implique un gasto fuerte."
+      "text": "Tienes una vecina que es una señora mayor. Ella llega del mercado y te pide que por favor la ayudes a subir las bolsas. ¿Qué haces?",
+      "options":[
+        {
+          "text": "Le dices que ahorita no puedes y te vas.",
+          "valid": false
+        },
+        {
+          "text": "La ayudas y cargas las bolsas hasta su casa.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Tu vecina está muy agradecida y decide pagarte Bs. ",
+        "negative": "Si hubieses ayudado a tu vecina con el mercado te hubieses ganado Bs. ",
+        "indexMoney": 1
+      }
     },
     {
-      "text": "La disciplina y la constancia son indispensables para lograr tu plan de ahorro."
+      "text": "Quieres aprovechar las vacaciones para ganar dinero y ahorrarlo para comprarte una cónsola. ¿Qué haces?",
+      "options":[
+        {
+          "text": "Le dices a tu papá para trabajar con él en la panadería.",
+          "valid": true
+        },
+        {
+          "text": "Te quedas en la casa ayudando a mamá y le dices que te pague.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": " ¡Muy bien! Al trabajar con papá en estas vacaciones has ganado Bs. ",
+        "negative": "Siempre debes ayudar a mamá con las labores de la casa sin esperar nada a cambio. Si escogías trabajar con papá hubieses ganado Bs. ",
+        "indexMoney": 4
+      }
     },
     {
-      "text": "La mejor manera de comenzar a ahorrar es elaborar un plan a través del cual puedas organizar tus recursos."
+      "text": "En el colegio de tu hermana van a hacer una verbena, por lo que tú decides:",
+      "options":[
+        {
+          "text": "Ir a la verbena con tu mamá y vender unas tortas que hiciste con ella.",
+          "valid": true
+        },
+        {
+          "text": "Ir a la verbena y ponerte a jugar en otros kioscos",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Has vendido en la verbena todas las tortas que hiciste con tu mamá. ¡Ahora puedes ir a jugar en los demás kioscos!. Has ganado Bs. ",
+        "negative": "Recuerda que estás ahorrando y tratando de ganar dinero, por lo que debes darle prioridad a vender las tortas que hiciste con tu mamá, hubieses ganado Bs. ",
+        "indexMoney": 3
+      }
     },
     {
-      "text": "El consumo inteligente parte de buscar toda la información necesaria sobre los productos que deseas comprar para estar todo lo informado posible; se buscan varias opciones para cubrir la necesidad, se evalúan vendedores, marcas, calidad, precios, garantías, etc. y con toda la información recabada se toma una decisión."
+      "text": "Al pasar el patio, ves caída una pequeña niña en los columpios que se lastimó la rodilla. Ella comienza a llorar por lo que...",
+      "options":[
+        {
+          "text": "Te acercas y la ayudas.",
+          "valid": true
+        },
+        {
+          "text": "Sigues caminando.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Su mamá llega y está muy agradecida de que consolaste a su hija. Has ganado Bs. ",
+        "negative": "Al ver a la niña en el piso debiste haberla ayudado, te hubieses ganado Bs. ",
+        "indexMoney": 4
+      }
     },
     {
-      "text": "El ahorro requiere práctica y disciplina, resulta apropiado convertirlo en una costumbre."
+      "text": "Has descubierto una nueva receta para preparar gelatina y necesitas dinero para comprarte unos audífonos nuevos, ¿qué haces?",
+      "options":[
+        {
+          "text": "Preparas gelatina en vasitos y los vendes a tus compañeros de clase.",
+          "valid": true
+        },
+        {
+          "text": "Le pides a tu hermana mayor que te prepare la gelatina para venderla en el colegio.",
+          "valid": false
+        }
+      ],
+      "feedback": {
+        "positive": " ¡Muy bien! Para ganar dinero extra y poder comprarte lo que quieres,  debes esforzarte y trabajar. Has ganado Bs. ",
+        "negative": "Si tu hermana prepara la gelatina a ella le corresponderá ganarse el dinero al venderlos. Recuerda que para ganar dinero extra y poder comprarte lo que quieres, debes esforzarte y trabajar, te hubieses podido ganar Bs. ",
+        "indexMoney": 5
+      }
     },
     {
-      "text": "Se deben tener prioridades en aquello en lo que se gasta. Es importante no comprar todo aquello que a uno le provoca. Es posible que por complacer un capricho no se pueda más tarde comprar algo que es realmente necesario."
+      "text": "El papá de tu vecino necesita ayuda para bajar unas cajas al maletero del edificio. Te pide ayuda pero justamente a esa hora es tu programa de televisión favorito. ¿Qué haces?",
+      "options":[
+        {
+          "text": "Le dices que estás muy cansado y te quedas viendo tu programa de televisión favorito.",
+          "valid": false
+        },
+        {
+          "text": "Lo ayudas a bajar las cajas al maletero.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Excelente! Debes ser colaborador con las personas que te rodean, sin esperar nada a cambio. En esta ocasión tu vecino está muy agradecido y toma la decisión de pagarte Bs. ",
+        "negative": "Debes ser colaborador con las personas que te rodean, sin esperar nada a cambio. Si hubieses ayudado al papá de tu vecino, probablemente te habría dado una recompensa, te hubieses ganado Bs. ",
+        "indexMoney": 1
+      }
     },
     {
-      "text": "Al acumular pequeñas cantidades se va logrando tener una cifra mayor, que puede servir para hacer compras más grandes en lugar de hacer muchas compras pequeñas. "
-    },
-    {
-      "text": "La Cuenta Corriente es un servicio que te ofrecen los bancos para guardar dinero y puedes manejarlo fácilmente."
+      "text": "Estás ahorrando de la mesada que te dan tus padres para las vacaciones. Te dicen tus amigos que salió un nuevo video juego que ya todos lo tienen. Qué debes hacer:",
+      "options":[
+        {
+          "text": "Gastarte los ahorros para tus vacaciones en ese videojuego nuevo.",
+          "valid": false
+        },
+        {
+          "text": "Pedir más mesada a tus papás.",
+          "valid": false
+        },
+        {
+          "text": "Hacer el sacrificio de no comprar el juego para seguir ahorrando para tus vacaciones.",
+          "valid": true
+        }
+      ],
+      "feedback": {
+        "positive": "¡Muy bien! Si estás ahorrando para un propósito debes mantenerlo y no gastar en lo primero que se te antoje.",
+        "negative": "Debes mantener firme tu meta de ahorro no gastar en lo primero que se te antoje ni pedir más dinero a tus padres."
+      }
     }
   ],
   [
@@ -931,7 +1051,7 @@
       }
     },
     {
-      "text": "Llevas dos semanas ahorrando dinero y no te has comprado ninguna chuchería, por lo que decides ir al kiosco a comprarte una:",
+      "text": "Llevas dos semanas ahorrando dinero y no te has comprado ninguna chuchería, por lo que decides ir al kiosco a comprar:",
       "options":[
         {
           "text": "Chocolate (Bs. 12.000)",
@@ -1094,151 +1214,31 @@
   ],
   [
     {
-      "text": "Tienes una fiesta el sábado y tu vecino necesita pintar la reja de su casa ese mismo día y te pregunta si tú quieres hacerlo y él te paga por eso. ¿Qué haces?",
-      "options":[
-        {
-          "text": "Pintas la reja y así ganas un poco de dinero.",
-          "valid": true
-        },
-        {
-          "text": "Vas a la fiesta a disfrutar",
-          "valid": false
-        }
-      ],
-      "feedback": {
-        "positive": "¡Excelente! Has elegido la opción correcta. Has ganado Bs. ",
-        "negative": "¡Qué mal! Si hubieses elegido pintar la reja, te hubieses ganado Bs. ",
-        "indexMoney": 2
-      }
+      "text": "Para adquirir el hábito del ahorro y cumplir tus metas sólo necesitas decisión, organización y constancia."
     },
     {
-      "text": "Tienes una vecina que es una señora mayor. Ella llega del mercado y te pide que por favor la ayudes a subir las bolsas. ¿Qué haces?",
-      "options":[
-        {
-          "text": "Le dices que ahorita no puedes y te vas.",
-          "valid": false
-        },
-        {
-          "text": "La ayudas y cargas las bolsas hasta su casa.",
-          "valid": true
-        }
-      ],
-      "feedback": {
-        "positive": "¡Excelente! Tu vecina está muy agradecida y decide pagarte Bs. ",
-        "negative": "Si hubieses ayudado a tu vecina con el mercado te hubieses ganado Bs. ",
-        "indexMoney": 1
-      }
+      "text": "El ahorro es una útil herramienta para salir de cualquier imprevisto que implique un gasto fuerte."
     },
     {
-      "text": "Quieres aprovechar las vacaciones para ganar dinero y ahorrarlo para comprarte una cónsola. ¿Qué haces?",
-      "options":[
-        {
-          "text": "Le dices a tu papá para trabajar con él en la panadería.",
-          "valid": true
-        },
-        {
-          "text": "Te quedas en la casa ayudando a mamá y le dices que te pague.",
-          "valid": false
-        }
-      ],
-      "feedback": {
-        "positive": " ¡Muy bien! Al trabajar con papá en estas vacaciones has ganado Bs. ",
-        "negative": "Siempre debes ayudar a mamá con las labores de la casa sin esperar nada a cambio. Si escogías trabajar con papá hubieses ganado Bs. ",
-        "indexMoney": 4
-      }
+      "text": "La disciplina y la constancia son indispensables para lograr tu plan de ahorro."
     },
     {
-      "text": "En el colegio de tu hermana van a hacer una verbena, por lo que tú decides:",
-      "options":[
-        {
-          "text": "Ir a la verbena con tu mamá y vender unas tortas que hiciste con ella.",
-          "valid": true
-        },
-        {
-          "text": "Ir a la verbena y ponerte a jugar en otros kioscos",
-          "valid": false
-        }
-      ],
-      "feedback": {
-        "positive": "¡Muy bien! Has vendido en la verbena todas las tortas que hiciste con tu mamá. ¡Ahora puedes ir a jugar en los demás kioscos!. Has ganado Bs. ",
-        "negative": "Recuerda que estás ahorrando y tratando de ganar dinero, por lo que debes darle prioridad a vender las tortas que hiciste con tu mamá, hubieses ganado Bs. ",
-        "indexMoney": 3
-      }
+      "text": "La mejor manera de comenzar a ahorrar es elaborar un plan a través del cual puedas organizar tus recursos."
     },
     {
-      "text": "Al pasar el patio, ves caída una pequeña niña en los columpios que se lastimó la rodilla. Ella comienza a llorar por lo que...",
-      "options":[
-        {
-          "text": "Te acercas y la ayudas.",
-          "valid": true
-        },
-        {
-          "text": "Sigues caminando.",
-          "valid": false
-        }
-      ],
-      "feedback": {
-        "positive": "¡Excelente! Su mamá llega y está muy agradecida de que consolaste a su hija. Has ganado Bs. ",
-        "negative": "Al ver a la niña en el piso debiste haberla ayudado, te hubieses ganado Bs. ",
-        "indexMoney": 4
-      }
+      "text": "El consumo inteligente parte de buscar toda la información necesaria sobre los productos que deseas comprar para estar todo lo informado posible; se buscan varias opciones para cubrir la necesidad, se evalúan vendedores, marcas, calidad, precios, garantías, etc. y con toda la información recabada se toma una decisión."
     },
     {
-      "text": "Has descubierto una nueva receta para preparar gelatina y necesitas dinero para comprarte unos audífonos nuevos, ¿qué haces?",
-      "options":[
-        {
-          "text": "Preparas gelatina en vasitos y los vendes a tus compañeros de clase.",
-          "valid": true
-        },
-        {
-          "text": "Le pides a tu hermana mayor que te prepare la gelatina para venderla en el colegio.",
-          "valid": false
-        }
-      ],
-      "feedback": {
-        "positive": " ¡Muy bien! Para ganar dinero extra y poder comprarte lo que quieres,  debes esforzarte y trabajar. Has ganado Bs. ",
-        "negative": "Si tu hermana prepara la gelatina a ella le corresponderá ganarse el dinero al venderlos. Recuerda que para ganar dinero extra y poder comprarte lo que quieres, debes esforzarte y trabajar, te hubieses podido ganar Bs. ",
-        "indexMoney": 5
-      }
+      "text": "El ahorro requiere práctica y disciplina, resulta apropiado convertirlo en una costumbre."
     },
     {
-      "text": "El papá de tu vecino necesita ayuda para bajar unas cajas al maletero del edificio. Te pide ayuda pero justamente a esa hora es tu programa de televisión favorito. ¿Qué haces?",
-      "options":[
-        {
-          "text": "Le dices que estás muy cansado y te quedas viendo tu programa de televisión favorito.",
-          "valid": false
-        },
-        {
-          "text": "Lo ayudas a bajar las cajas al maletero.",
-          "valid": true
-        }
-      ],
-      "feedback": {
-        "positive": "¡Excelente! Debes ser colaborador con las personas que te rodean, sin esperar nada a cambio. En esta ocasión tu vecino está muy agradecido y toma la decisión de pagarte Bs. ",
-        "negative": "Debes ser colaborador con las personas que te rodean, sin esperar nada a cambio. Si hubieses ayudado al papá de tu vecino, probablemente te habría dado una recompensa, te hubieses ganado Bs. ",
-        "indexMoney": 1
-      }
+      "text": "Se deben tener prioridades en aquello en lo que se gasta. Es importante no comprar todo aquello que a uno le provoca. Es posible que por complacer un capricho no se pueda más tarde comprar algo que es realmente necesario."
     },
     {
-      "text": "Estás ahorrando de la mesada que te dan tus padres para las vacaciones. Te dicen tus amigos que salió un nuevo video juego que ya todos lo tienen. Qué debes hacer:",
-      "options":[
-        {
-          "text": "Gastarte los ahorros para tus vacaciones en ese videojuego nuevo.",
-          "valid": false
-        },
-        {
-          "text": "Pedir más mesada a tus papás.",
-          "valid": false
-        },
-        {
-          "text": "Hacer el sacrificio de no comprar el juego para seguir ahorrando para tus vacaciones.",
-          "valid": true
-        }
-      ],
-      "feedback": {
-        "positive": "¡Muy bien! Si estás ahorrando para un propósito debes mantenerlo y no gastar en lo primero que se te antoje.",
-        "negative": "Debes mantener firme tu meta de ahorro no gastar en lo primero que se te antoje ni pedir más dinero a tus padres."
-      }
+      "text": "Al acumular pequeñas cantidades se va logrando tener una cifra mayor, que puede servir para hacer compras más grandes en lugar de hacer muchas compras pequeñas. "
+    },
+    {
+      "text": "La Cuenta Corriente es un servicio que te ofrecen los bancos para guardar dinero y puedes manejarlo fácilmente."
     }
   ]
 ]

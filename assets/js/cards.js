@@ -1,36 +1,41 @@
-function randomCardFunction() {
+function randomCardFunction(arrayCard) {
   let min = 0
   let max = cards[randomCard.typeCard].length - 1
   let num = Math.floor(Math.random()*(max-min+1))+min;
-  if (randomCard.old.length > max) {
-    alert('no hay mas cartas')
-  } else {
-    if (!randomCard.old.includes( num )) {
-      randomCard = { ...randomCard,
-        new: num
-      }
-      randomCard.old.push(num)
-    } else {
-      while (randomCard.old.includes( num )) {
-        num = Math.floor(Math.random()*(max-min+1))+min;
-      }
-      randomCard = { ...randomCard,
-        new: num
-      }
-      randomCard.old.push(num)
-    }
-  }
+
+  // if (randomCard.old[arrayCard].length > max) {
+  //   alert('no hay mas cartas')
+  // } else {
+  //   if (!randomCard.old[arrayCard].includes( num )) {
+  //     randomCard = { ...randomCard,
+  //       new: num
+  //     }
+  //     randomCard.old[arrayCard].push(num)
+  //   } else {
+  //     while (randomCard.old[arrayCard].includes( num )) {
+  //       num = Math.floor(Math.random()*(max-min+1))+min;
+  //     }
+  //     randomCard = { ...randomCard,
+  //       new: num
+  //     }
+  //     randomCard.old[arrayCard].push(num)
+  //   }
+  // }
+
+
   console.log(randomCard)
+  console.log(max)
+  console.log(num)
 }
 
 function viewCard(colorCard, arrayCard) {
   randomCard.typeCard = arrayCard
-  // randomCardFunction()
+  // randomCardFunction(arrayCard)
 
   if (randomCard.new[randomCard.typeCard] < cards[randomCard.typeCard].length) {
     setTimeout(() => {
       $(`.${colorCard} .innerQuestion`).text(cards[randomCard.typeCard][randomCard.new[arrayCard]].text).show()
-      if (randomCard.typeCard === 2) {
+      if (randomCard.typeCard === 4) {
         $(`.${colorCard} .modalFeedback`).show();
       } else {
         let button = cards[randomCard.typeCard][randomCard.new[arrayCard]].options.map((btn, i) =>{
@@ -57,15 +62,15 @@ function viewCard(colorCard, arrayCard) {
 function response(valid) {
   const feedbacks =  cards[randomCard.typeCard][randomCard.new[randomCard.typeCard]].feedback
   const profit = ' Has ganado Bs. ' + (money.blueCard[feedbacks.indexMoney] * money.ceros).toLocaleString() + '.'
-  const greenCard = (money.greenCard[feedbacks.indexMoney] * money.ceros).toLocaleString() + '.'
+  const greenCard = (money.greenCard[feedbacks.indexMoney] * money.ceros)
   $('.innerQuestion').hide()
   $('.modalQuestion').hide()
   $('.modalFeedback').fadeIn()
   if (randomCard.typeCard === 0 ) {
     if (valid === true) {
       $('.modalFeedback p').text(feedbacks.positive + profit)
-      money.pig = (money.pig + money.blueCard[feedbacks.indexMoney])
-      console.log((money.pig * money.ceros))
+      money.pig = (money.pig + (money.blueCard[feedbacks.indexMoney] * money.ceros))
+      console.log((money.pig))
     } else {
       $('.modalFeedback p').text(feedbacks.negative)
     }
@@ -77,6 +82,14 @@ function response(valid) {
     } else {
       $('.modalFeedback p').text(feedbacks.negative)
     }
+  } else if (randomCard.typeCard === 2 ) {
+    if (valid === true) {
+      $('.modalFeedback p').text(feedbacks.positive + (feedbacks.indexMoney ? greenCard.toLocaleString() + '.' : "" ))
+      money.pig = money.pig + greenCard
+      console.log(greenCard)
+    } else {
+      $('.modalFeedback p').text(feedbacks.negative + (feedbacks.indexMoney ? greenCard + ' No has ganado dinero.' : ""))
+    }
   } else if (randomCard.typeCard === 3 ) {
     if (valid === true) {
       $('.modalFeedback p').text(feedbacks.positive.text + (feedbacks.positive.spend * money.ceros).toLocaleString())
@@ -87,14 +100,6 @@ function response(valid) {
       $('.modalFeedback p').text(feedbacks.negative.text + (feedbacks.negative.spend * money.ceros).toLocaleString())
       money.pig = (money.pig - (feedbacks.negative.spend * money.ceros))
       console.log(money)
-    }
-  } else if (randomCard.typeCard === 4 ) {
-    if (valid === true) {
-      $('.modalFeedback p').text(feedbacks.positive + (feedbacks.indexMoney ? greenCard : "" ))
-      varGame.avatarPosition = varGame.avatarPosition + 1
-      console.log(varGame)
-    } else {
-      $('.modalFeedback p').text(feedbacks.negative + (feedbacks.indexMoney ? greenCard + ' No has ganado dinero.' : ""))
     }
   }
 }

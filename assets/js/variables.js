@@ -22,13 +22,7 @@ let money = {
 let randomCard = {
   typeCard: 0,
   new: [0,0,0,0,0],
-  old: {
-    blueCards: [],
-    cianCards: [],
-    greenCards: [],
-    redCards: [],
-    yellowCards: []
-  }
+  old:[[],[],[],[],[]]
 }
 
 let settingChild = {
