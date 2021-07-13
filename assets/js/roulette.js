@@ -1,5 +1,6 @@
 function spinner() {
-  $("#rouletteSpin").attr("disabled");
+  $("#rouletteSpin").prop("disabled", true);
+  $('#pig').attr('src', 'assets/img/alcancia/cerdolleno.png');
 
   const x = -1000
   const y = -3000
@@ -8,9 +9,9 @@ function spinner() {
   const trunk = Math.floor(deg/360)
   const numero = deg - trunk * 360
 
-  // setTimeout(() => {
-  //   $("#selectedAward").removeAttr("disabled");
-  // }, 3500);
+  setTimeout(() => {
+    $("#rouletteSpin").removeAttr("disabled");
+  }, 6500);
 
   $('.contanerRoulette').css('transform', 'rotate('+deg+'deg)')
   setTimeout(() => {
@@ -61,6 +62,6 @@ function spinner() {
       $('.contanerRoulette').css('transform', 'rotate(0deg)')
     }, 3008);
   }
-
-
+  varGame.avatarPosition = varGame.numberRoulette + varGame.avatarPosition
+  console.log(varGame)
 }

@@ -6,17 +6,7 @@ $(window).on('load', function () {
   }, 1500);
 });
 
-let offset
-
-if (screen.width > 768){
-  offset = 200
-} else {
-  offset = 0
-}
-
-new WOW({offset:offset, scrollContainer: null}).init()
-
-let cards = []
+// ------------------init-load---------------------
 
 const getCards = async() => {
   let data = await fetch('components/GameCards.json')
@@ -30,10 +20,9 @@ $(document).ready(function() {
   $('#Game').load('components/Game.html');
   $('#Store').load('components/Store.html');
   getCards()
-
   setTimeout(() => {
-    console.log(cards[0][0].feedback.positive)
-  }, 1000);
+    $('#Cards').load('components/Cards.html');
+  }, 300);
 });
 
 // --------------change-screen-----------
@@ -54,56 +43,17 @@ function nextAwards() {
     $('.imgAvatar .shirt').attr('fill', settingChild.clothes.shirt);
     $('.imgAvatar .pants').attr('fill', settingChild.clothes.pants);
     $(`#Awards .imgAvatar`).show();
-  }, 10);
+  }, 15);
 }
 
 function nextGame() {
   $('#Roulette').load('components/Roulette.html');
   $('#Awards').hide()
   $('#Game').show()
+  selectaward();
 }
 
-// --------------Variables--------------
-
-let settingChild = {
-  gameChild : 'boy',
-  hair: '#4C141A',
-  skin: '#F7C0A2',
-  clothes: {
-    shirt: '#ff8500',
-    pants: '#DB6D06',
-  }
+function showCards(params) {
+  $('#Cards').load('components/Cards.html');
 }
 
-let varGame = {
-  numberRoulette: 1,
-}
-
-function innerQuestion() {
-  $('#innerQuestion').text(cards[0][0].text).show()
-  let button = cards[0][0].options.map((btn) =>{
-    return(`
-      <button onclick="response(${btn.valid})">${btn.text}</button>
-    `)
-  })
-  $('#modalQuestion').append(button);
-}
-
-function response(valid) {
-  $('#innerQuestion').hide()
-  $('#modalQuestion').hide();
-  $('#modalFeedback').fadeIn()
-  if (valid === true) {
-    $('#modalFeedback').text(cards[0][0].feedback.positive)
-  } else {
-    $('#modalFeedback').text(cards[0][0].feedback.negative)
-  }
-}
-
-function closeModal() {
-  setTimeout(() => {
-    $('#innerQuestion').text("")
-    $('#modalQuestion').text("").show();
-    $('#modalFeedback').hide()
-  }, 500);
-}
