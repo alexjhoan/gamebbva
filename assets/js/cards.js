@@ -79,16 +79,16 @@ function response(valid) {
       money.pig = money.pig + greenCard
       console.log(greenCard)
     } else {
-      $('.modalFeedback p').text(feedbacks.negative + (feedbacks.indexMoney ? greenCard + ' No has ganado dinero.' : ""))
+      $('.modalFeedback p').text(feedbacks.negative + (feedbacks.indexMoney ? greenCard.toLocaleString() + '. No has ganado dinero.' : ""))
     }
   } else if (randomCard.typeCard === 3 ) {
     if (valid === true) {
-      $('.modalFeedback p').text(feedbacks.positive.text + (feedbacks.positive.spend * money.ceros).toLocaleString())
+      $('.modalFeedback p').text(feedbacks.positive.text + (feedbacks.positive.spend * money.ceros).toLocaleString() + '.')
       console.log(feedbacks.positive.spend)
       money.pig = (money.pig - (feedbacks.positive.spend * money.ceros))
       console.log(money)
     } else {
-      $('.modalFeedback p').text(feedbacks.negative.text + (feedbacks.negative.spend * money.ceros).toLocaleString())
+      $('.modalFeedback p').text(feedbacks.negative.text + (feedbacks.negative.spend * money.ceros).toLocaleString() + '.')
       money.pig = (money.pig - (feedbacks.negative.spend * money.ceros))
       console.log(money)
     }
