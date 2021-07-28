@@ -327,7 +327,7 @@
       }
     },
     {
-      "text": "Alejandro tenía Bs. 350.000 y gastó Bs. 350.000. Rodolfo tenía Bs. 350.000 y gastó Bs. 100.000. ¿Quién tiene más dinero ahora?",
+      "text": "Alejandro tenía Bs. 500.000 y gastó Bs. 350.000. Rodolfo tenía Bs. 350.000 y gastó Bs. 100.000. ¿Quién tiene más dinero ahora?",
       "options":[
         {
           "text": "Rodolfo.",
@@ -709,7 +709,7 @@
         }
       ],
       "feedback": {
-        "positive": "Excelente! Los niños y jóvenes no tienen un sueldo porque no trabajan, por lo tanto sus padres le dan mesada para sus gastos en la semana..",
+        "positive": "Excelente! Los niños y jóvenes no tienen un sueldo porque no trabajan, por lo tanto sus padres le dan mesada para sus gastos en la semana.",
         "negative": "Los niños y jóvenes no tienen un sueldo porque no trabajan, por lo tanto sus padres le dan mesada para sus gastos en la semana.",
         "indexMoney": 4
       }
@@ -982,24 +982,21 @@
       }
     },
     {
-      "text": "Estás ahorrando de la mesada que te dan tus padres para las vacaciones. Te dicen tus amigos que salió un nuevo video juego que ya todos lo tienen. Qué debes hacer:",
+      "text": "La tía Celia te permite recoger las mazanas de su patio para que las puedas vender. Puedes ahorrar tiempo si las recoges del suelo, pero la calidad no es tan buena. Tú decides escoger las manzanas de.... ",
       "options":[
         {
-          "text": "Gastarte los ahorros para tus vacaciones en ese videojuego nuevo.",
-          "valid": false
-        },
-        {
-          "text": "Pedir más mesada a tus papás.",
-          "valid": false
-        },
-        {
-          "text": "Hacer el sacrificio de no comprar el juego para seguir ahorrando para tus vacaciones.",
+          "text": "Los árboles",
           "valid": true
+        },
+        {
+          "text": "El suelo",
+          "valid": false
         }
       ],
       "feedback": {
-        "positive": "¡Muy bien! Si estás ahorrando para un propósito debes mantenerlo y no gastar en lo primero que se te antoje.",
-        "negative": "Debes mantener firme tu meta de ahorro no gastar en lo primero que se te antoje ni pedir más dinero a tus padres."
+        "positive": "¡Excelente! Las personas al morder las manzanas crujientes y jugosas, querran comprarte más de ellas. Has ganado Bs. ",
+        "negative": "Si hubieses recogido las manzanas de los árboles, hubieses ganado Bs. ",
+        "indexMoney": 6
       }
     }
   ],
